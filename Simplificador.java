@@ -16,7 +16,7 @@
  */
 import javax.swing.JOptionPane;
 /**
- * fernando-i@outlook.com
+ * 
  * @author Fernando Isnaldo Silva de Faria
  */
 public class Simplificador {
