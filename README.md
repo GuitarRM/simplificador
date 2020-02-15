@@ -1,5 +1,5 @@
 # simplificador
-Simplificador de Frações
+Simplificador de Frações em Java
 
 Para compilar este programa, você precisa do Oracle JDK ou do OpenJDK.
 
