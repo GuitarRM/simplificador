@@ -14,10 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <httpo://www.gnu.org/licenses/>.
  */
-package com.mycompany.simplificadordefracoes;
-
 import javax.swing.JOptionPane;
-
 /**
  * fernando-i@outlook.com
  * @author Fernando Isnaldo Silva de Faria
