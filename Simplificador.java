@@ -23,15 +23,20 @@ public class Simplificador {
     public static void main(String Args[]){
         float numerador, denominador;
         int mmc;
-        boolean negativo;
+        boolean negativo, negativa;
         JOptionPane.showMessageDialog(null, "Atenção: O programa a seguir, é um projeto de fundo de quintal! \nLeia com atenção as próximas caixas de diálogo, senão vai dar erro.");
         numerador=Float.parseFloat(JOptionPane.showInputDialog("Insira somente o numerador inteiro"));
         denominador=Float.parseFloat(JOptionPane.showInputDialog("Insira somente o denominador inteiro"));
         mmc=2;
         negativo=false;
+        negativa=false;
         if(numerador<0){
             numerador=numerador*-1;
             negativo=true;
+        }
+        if(denominador<0){
+            denominador=denominador*-1;
+            negativa=true;
         }
         while(mmc <=numerador && mmc <= denominador){
             if(numerador%mmc!=0 || denominador%mmc!=0){
@@ -45,6 +50,9 @@ public class Simplificador {
         }
         if(negativo==true){
             numerador=numerador*-1;
+        }
+        if(negativa==true){
+            denominador=denominador*-1;
         }
         if(numerador==0){
             JOptionPane.showMessageDialog(null, "O resultado é 0.");
