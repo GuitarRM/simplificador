@@ -1,10 +1,10 @@
+/*Simplifica frações*/
 import javax.swing.JOptionPane;
 public class Simplificador {
     public static void main(String Args[]){
         float numerador, denominador;
         int mmc=2;
         boolean negativo=false, negativa=false;
-        JOptionPane.showMessageDialog(null, "Atenção: O programa a seguir, é um projeto de fundo de quintal! \nLeia com atenção as próximas caixas de diálogo, senão vai dar erro.");
         numerador=Float.parseFloat(JOptionPane.showInputDialog("Insira somente o numerador inteiro"));
         denominador=Float.parseFloat(JOptionPane.showInputDialog("Insira somente o denominador inteiro"));
         if(numerador<0){
