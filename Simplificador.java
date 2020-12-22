@@ -2,7 +2,7 @@
 import javax.swing.JOptionPane;
 public class Simplificador {
     public static void main(String Args[]){
-        float numerador, denominador;
+        float numerador=0, denominador=1;
         int mmc=2;
         boolean negativo=false, negativa=false;
         try {
