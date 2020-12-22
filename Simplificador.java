@@ -5,8 +5,14 @@ public class Simplificador {
         float numerador, denominador;
         int mmc=2;
         boolean negativo=false, negativa=false;
-        numerador=Float.parseFloat(JOptionPane.showInputDialog("Insira somente o numerador inteiro"));
-        denominador=Float.parseFloat(JOptionPane.showInputDialog("Insira somente o denominador inteiro"));
+        try {
+            numerador=Float.parseFloat(JOptionPane.showInputDialog("Insira somente o numerador inteiro"));
+            denominador=Float.parseFloat(JOptionPane.showInputDialog("Insira somente o denominador inteiro"));
+        }
+        catch (Exception e){
+            JOptionPane.showMessageDialog(null, "Dados foram incorretamente inseridos");
+            System.exit(0);
+        }
         if(numerador<0){
             numerador=numerador*-1;
             negativo=true;
